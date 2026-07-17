@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <h1>Tic Tac Toe</h1>
     <div id="game-board">
         <div class="squares" id="square1"></div>
         <div class="squares" id="square2"></div>
@@ -18,8 +18,13 @@
         <div class="squares" id="square7"></div>
         <div class="squares" id="square8"></div>
         <div class="squares" id="square9"></div>
-
     </div>
+
+    <div id="restart">
+        <input type="button" value="Restart" id="restart-button" onClick="restartGame()"/>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
