@@ -33,6 +33,8 @@ for(let i = 0; i <squares.length; i++){
         message.textContent = "It's a tie!";
         return
     }
+    
+   
     currentPlayer = (currentPlayer === players[0]) ? players[1] : players[0];
     if(currentPlayer === players[0]) {
         message.textContent = "X's turn";
@@ -64,7 +66,7 @@ function checkDraw() {
     return true;
 }
 
-function restartButton() {
+function restartGame() {
     for(let i = 0; i < squares.length; i++)
  {
     squares[i].textContent = '';
