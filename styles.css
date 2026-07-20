@@ -10,16 +10,24 @@ h1 {
 
 #game-board {
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: lightgray;
     display:grid;
     grid-template-columns: auto auto auto;
+
 }
 
 .squares{
     background-color: rgb(255, 255, 255);
-    border: 2px solid black;
+    border: 1.5px solid black;
+    font-size: 5em;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .squares:hover {
