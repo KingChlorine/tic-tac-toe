@@ -82,3 +82,97 @@ h1 {
     border-radius: 15px;
     visibility:hidden;
 }
+
+#line048 {
+    height: 375px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(-45deg);
+    position:absolute;
+    margin:auto;
+    top: 75px;
+    left: 510px;
+    border-radius: 15px;
+    visibility:hidden;
+}
+
+#line258 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(180deg);
+    position:absolute;
+    margin:auto;
+    top: 90px;
+    left: 614px;
+    border-radius: 15px;
+    visibility:hidden;
+}
+
+#line147 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(180deg);
+    position:absolute;
+    margin:auto;
+    top: 90px;
+    left: 510px;
+    border-radius: 15px;
+    visibility:hidden;
+}
+
+#line036 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(180deg);
+    position:absolute;
+    margin:auto;
+    top: 90px;
+    left: 407px;
+    border-radius: 15px;
+    visibility:hidden;
+}
+
+#line678 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(90deg);
+    position:absolute;
+    margin:auto;
+    top: 195px;
+    left: 507px;
+    border-radius: 15px;
+    visibility: hidden;
+   
+}
+
+#line345 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(90deg);
+    position:absolute;
+    margin:auto;
+    top: 90px;
+    left: 507px;
+    border-radius: 15px;
+    visibility: hidden;
+   
+}
+
+#line012 {
+    height: 340px;
+    width: 5px;
+    background-color: rgb(204, 2, 2);
+    transform: rotate(90deg);
+    position:absolute;
+    margin:auto;
+    top: -14px;
+    left: 507px;
+    border-radius: 15px;
+    visibility: hidden;
+   
+}

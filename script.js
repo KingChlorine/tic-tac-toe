@@ -3,7 +3,14 @@ const squares = document.getElementsByClassName('squares')
 const players = ['X', 'O']
 let currentPlayer = players[0]
 let gameOver = false;
-const line = document.getElementById('line246')
+const line246 = document.getElementById('line246')
+const line048 = document.getElementById('line048')
+const line258 = document.getElementById('line258')
+const line147 = document.getElementById('line147')
+const line036 = document.getElementById('line036')
+const line678 = document.getElementById('line678')
+const line345 = document.getElementById('line345')
+const line012 = document.getElementById('line012')
 
 const message = document.createElement('h2')
 message.textContent = "X's turn"
@@ -62,6 +69,20 @@ function checkWin(currentPlayer) {
             && squares[c].textContent === currentPlayer) {
                 if (i === 7)
                 winLine246()
+                if (i === 6)
+                winLine048()
+                if (i === 5)
+                winLine258()
+                if (i === 4)
+                winLine147()
+                if (i === 3)
+                winLine036()
+                if (i === 2)
+                winLine678()
+                if (i === 1)
+                winLine345()
+                if (i === 0)
+                winLine012()
                 return true
             }
     
@@ -84,6 +105,8 @@ function restartGame() {
  {
     squares[i].textContent = ""
  }
+    line246.style.visibility = "hidden"
+    line048.style.visibility = "hidden"
     message.textContent= "X's turn"
     currentPlayer = players[0]
 }
@@ -91,6 +114,33 @@ function restartGame() {
 
 
 function winLine246() {
+    line246.style.visibility= "visible"
+}
 
-        line.style.visibility= "visible"
+function winLine048() {
+    line048.style.visibility= "visible"
+}
+
+function winLine258() {
+    line258.style.visibility= "visible"
+}
+
+function winLine147() {
+    line147.style.visibility= "visible"
+}
+
+function winLine036() {
+    line036.style.visibility= "visible"
+}
+
+function winLine678() {
+    line678.style.visibility= "visible"
+}
+
+function winLine345() {
+    line345.style.visibility= "visible"
+}
+
+function winLine012() {
+    line012.style.visibility= "visible"
 }
