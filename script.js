@@ -74,6 +74,7 @@ function checkTie() {
 }
 
 function restartGame() {
+    gameOver = false
     for(let i = 0; i < squares.length; i++)
  {
     squares[i].textContent = ""
