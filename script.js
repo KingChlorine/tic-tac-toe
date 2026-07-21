@@ -2,6 +2,7 @@ const board = document.getElementById('game-board')
 const squares = document.getElementsByClassName('squares')
 const players = ['X', 'O']
 let currentPlayer = players[0]
+let gameOver = false;
 
 const message = document.createElement('h2')
 message.textContent = "X's turn"
@@ -22,6 +23,7 @@ const winCombinations = [
 
 for(let i = 0; i <squares.length; i++){
     squares[i].addEventListener('click', () => {
+        if(gameOver) return;
         if(squares[i].textContent !== '')  {
             
             return 
@@ -31,6 +33,7 @@ for(let i = 0; i <squares.length; i++){
 
         if(checkWin(currentPlayer)) {
             message.textContent = `Game over! ${currentPlayer} wins!`
+            gameOver = true
             return 
         }
     
