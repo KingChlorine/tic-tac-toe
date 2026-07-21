@@ -3,6 +3,7 @@ const squares = document.getElementsByClassName('squares')
 const players = ['X', 'O']
 let currentPlayer = players[0]
 let gameOver = false;
+const line = document.getElementById('line246')
 
 const message = document.createElement('h2')
 message.textContent = "X's turn"
@@ -33,6 +34,7 @@ for(let i = 0; i <squares.length; i++){
 
         if(checkWin(currentPlayer)) {
             message.textContent = `Game over! ${currentPlayer} wins!`
+            windirection()
             gameOver = true
             return 
         }
@@ -58,8 +60,11 @@ function checkWin(currentPlayer) {
         if(squares[a].textContent === currentPlayer 
             && squares[b].textContent === currentPlayer
             && squares[c].textContent === currentPlayer) {
+                if (i === 7)
+                winLine246()
                 return true
             }
+    
     }
     return false
 }
@@ -81,4 +86,11 @@ function restartGame() {
  }
     message.textContent= "X's turn"
     currentPlayer = players[0]
+}
+
+
+
+function winLine246() {
+
+        line.style.visibility= "visible"
 }
