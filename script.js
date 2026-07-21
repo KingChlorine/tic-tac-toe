@@ -41,7 +41,6 @@ for(let i = 0; i <squares.length; i++){
 
         if(checkWin(currentPlayer)) {
             message.textContent = `Game over! ${currentPlayer} wins!`
-            windirection()
             gameOver = true
             return 
         }
@@ -107,6 +106,13 @@ function restartGame() {
  }
     line246.style.visibility = "hidden"
     line048.style.visibility = "hidden"
+    line258.style.visibility = "hidden"
+    line147.style.visibility = "hidden"
+    line036.style.visibility = "hidden"
+    line678.style.visibility = "hidden"
+    line345.style.visibility = "hidden"
+    line012.style.visibility = "hidden"
+    
     message.textContent= "X's turn"
     currentPlayer = players[0]
 }
