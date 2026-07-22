@@ -11,6 +11,7 @@ const line036 = document.getElementById('line036')
 const line678 = document.getElementById('line678')
 const line345 = document.getElementById('line345')
 const line012 = document.getElementById('line012')
+const test = document.getElementById('test')
 
 const message = document.createElement('h2')
 message.textContent = "X's turn"
@@ -30,10 +31,21 @@ const winCombinations = [
 ]
 
 for(let i = 0; i <squares.length; i++){
+
+ 
+    squares[i].addEventListener('mouseover', () => {
+        test.textContent = currentPlayer
+    })
+
+    squares[i].addEventListener('mouseout', () => {
+        test.textContent = ""
+    })
+
     squares[i].addEventListener('click', () => {
         if(gameOver) return;
+       
         if(squares[i].textContent !== '')  {
-            
+           
             return 
         }
         
@@ -150,3 +162,12 @@ function winLine345() {
 function winLine012() {
     line012.style.visibility= "visible"
 }
+
+function hover() {
+    squares[i].addEventListener('mouseover', () => {
+       
+        if(currentPlayer === players[0])  {
+        squares[i].textContent ="no"
+        }
+        return
+    })}
