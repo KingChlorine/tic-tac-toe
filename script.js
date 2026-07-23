@@ -11,7 +11,16 @@ const line036 = document.getElementById('line036')
 const line678 = document.getElementById('line678')
 const line345 = document.getElementById('line345')
 const line012 = document.getElementById('line012')
-const test = document.getElementById('test')
+const test0 = document.getElementById('test0')
+const test1 = document.getElementById('test1')
+const test2 = document.getElementById('test2')
+const test3 = document.getElementById('test3')
+const test4 = document.getElementById('test4')
+const test5 = document.getElementById('test5')
+const test6 = document.getElementById('test6')
+const test7 = document.getElementById('test7')
+const test8 = document.getElementById('test8')
+const preview = document.getElementsByClassName('preview')
 
 const message = document.createElement('h2')
 message.textContent = "X's turn"
@@ -32,13 +41,51 @@ const winCombinations = [
 
 for(let i = 0; i <squares.length; i++){
 
- 
+
     squares[i].addEventListener('mouseover', () => {
-        test.textContent = currentPlayer
+        
+        if(i === 0 && squares[0].textContent === "" && gameOver == false){
+        test0.textContent = currentPlayer }
+        if(i === 1 && squares[1].textContent === "" && gameOver == false){
+        test1.textContent = currentPlayer }
+        if(i === 2 && squares[2].textContent === "" && gameOver == false){
+        test2.textContent = currentPlayer }
+        if(i === 3 && squares[3].textContent === "" && gameOver == false){
+        test3.textContent = currentPlayer }
+        if(i === 4 && squares[4].textContent === "" && gameOver == false){
+        test4.textContent = currentPlayer }
+        if(i === 5 && squares[5].textContent === "" && gameOver == false){
+        test5.textContent = currentPlayer }
+        if(i === 6 && squares[6].textContent === "" && gameOver == false){
+        test6.textContent = currentPlayer }
+        if(i === 7 && squares[7].textContent === "" && gameOver == false){
+        test7.textContent = currentPlayer }
+        if(i === 8 && squares[8].textContent === "" && gameOver == false){
+        test8.textContent = currentPlayer }
+    
+    
     })
+    
 
     squares[i].addEventListener('mouseout', () => {
-        test.textContent = ""
+        if(i === 0){
+        test0.textContent = "" }
+        if(i === 1){
+        test1.textContent = "" }
+        if(i === 2){
+        test2.textContent = "" }
+        if(i === 3){
+        test3.textContent = "" }
+        if(i === 4){
+        test4.textContent = "" }
+        if(i === 5){
+        test5.textContent = "" }
+        if(i === 6){
+        test6.textContent = "" }
+        if(i === 7){
+        test7.textContent = "" }
+        if(i === 8){
+        test8.textContent = "" }
     })
 
     squares[i].addEventListener('click', () => {
