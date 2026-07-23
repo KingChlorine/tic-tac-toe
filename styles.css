@@ -56,6 +56,7 @@ h1 {
 #restart {
     margin: auto;
     text-align: center;
+    margin-top: 4em;
     }
 
 #restart-button {
@@ -187,10 +188,21 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: -1;
     
 }
 
+#preview-board {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-top: -390px;
+    z-index: -1;
+   
+}
 
 
 #test0, #test1, #test2 {
